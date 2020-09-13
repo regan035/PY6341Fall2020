@@ -6,18 +6,14 @@
 # Assignment #3
 # Assignment Title: Working with lists
 
-city_list = ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix',
-             'Philadelphia', 'San Anthonio', 'San Diego', 'Dallas', 'San Jose']
+city_list = ['New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix','Philadelphia', 'San Anthonio', 'San Diego', 'Dallas', 'San Jose']
 
-population_list = ['8,336,817', '3,979,576', '2,693,976', '2,320,268',
-                   '1,680,992', '1,680,992', '1,547,253', '1,423,851', '1,343,573', '1,021,795']
+population_list = ['8,336,817', '3,979,576', '2,693,976', '2,320,268','1,680,992', '1,680,992', '1,547,253', '1,423,851', '1,343,573', '1,021,795']
 
 #1.Print the entire city list and population list in two separate lines.
 print(city_list)
 print("\n")
-print("\n")
 print(population_list)
-print("\n")
 print("\n")
 
 #2. Print the 3rd item followed by its population
@@ -43,23 +39,19 @@ city_list.pop(2)
 population_list.pop(2)
 
 #8. Print the both list in two separate line.
-
 print(city_list)
-print("\n")
 print("\n")
 print(population_list)
 print("\n")
-print("\n")
+
 
 #9. Print both sorted list in a separate line
-city_list.sort()
-population_list.sort()
-print(city_list)
+print(sorted(city_list))
+print(sorted(population_list))
 print("\n")
-print(population_list)
-print("\n")
+
 
 #10. Double the population of the 2nd item in the population list
 second_item = population_list[1]
 new_pop = (int(second_item.replace(',', '')))*2
-print(f"{new_pop:,}")
+print(f"The double of 2nd item in population list is {new_pop:,}.")
