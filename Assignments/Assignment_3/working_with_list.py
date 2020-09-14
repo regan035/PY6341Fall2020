@@ -37,9 +37,11 @@ population_list.insert(5, 978908)
 #5. Print the list of all cities
 print(city_list)
 print("\n")
+
 #6. Print the list of all population
 print(population_list)
 print("\n")
+
 #7. Remove the 3rd item from city list and the corresponding population item from population list.
 city_list.pop(2)
 population_list.pop(2)
@@ -55,6 +57,5 @@ print((sorted(city_list)), (sorted(population_list)))
 print("\n")
 
 #10. Double the population of the 2nd item in the population list
-
 new_pop = population_list[1]*2
 print(f"The double of 2nd item in population list is {new_pop:,}.")
