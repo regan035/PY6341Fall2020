@@ -25,14 +25,14 @@ print()
 #2. Print the first name and last name on the same output line as formatted below (first letter must be capital).
 print('Student Full Name: ')
 print('------------------')
-for i in range(len(first_names)-1):
+for i in range(len(first_names)):
   print(first_names[i].title()+' '+last_names[i].title())
 print()
 
 #3. Print the first name and last name in capital letter on the same output line as formatted below
 print('Student Full Name: ')
 print('------------------')
-for i in range(len(first_names)-1):
+for i in range(len(first_names)):
   print(first_names[i].upper()+' '+last_names[i].upper())
 print()
 
@@ -40,7 +40,6 @@ print()
 first_names.pop(2)
 last_names.pop(2)
 scores.pop(2)
-print()
 
 #5.Add a new student information (first name, last name and score) on 2nd index for each of the three list.Print the first name, last name and score on the same output line as formatted below
 first_names.insert(2, 'baldwin')
@@ -48,9 +47,11 @@ last_names.insert(2, 'macus')
 scores.insert(2, 87.00)
 print('Student Full Name and Score: ')
 print('----------------------------')
-for j in range(len(first_names)-1):
-    print(f'{first_names[j].title()} {last_names[j].title()} - {scores[j]}')
+for j in range(len(first_names)):
+    print(
+        f'{first_names[j].title()} {last_names[j].title()} - {"{:.2f}".format(scores[j])}')
 print()
+
 
 #6. Sort the first name list and print each first name in one line. Print a heading as “List of All Students first name: ”
 print('List of All Student First Name(Sorted):')
