@@ -42,8 +42,8 @@ last_names.pop(2)
 scores.pop(2)
 
 #5.Add a new student information (first name, last name and score) on 2nd index for each of the three list.Print the first name, last name and score on the same output line as formatted below
-first_names.insert(2, 'baldwin')
-last_names.insert(2, 'macus')
+first_names.insert(2, 'macus')
+last_names.insert(2, 'baldwin')
 scores.insert(2, 87.00)
 print('Student Full Name and Score: ')
 print('----------------------------')
@@ -52,13 +52,12 @@ for j in range(len(first_names)):
         f'{first_names[j].title()} {last_names[j].title()} - {"{:.2f}".format(scores[j])}')
 print()
 
-
 #6. Sort the first name list and print each first name in one line. Print a heading as “List of All Students first name: ”
 print('List of All Student First Name(Sorted):')
 print('---------------------------------------')
 first_names.sort()
-for sorted_first_names in first_names:
-  print(sorted_first_names.title())
+for sorted_first_name in first_names:
+  print(sorted_first_name.title())
 print()
 
 #7. Create a tuple with first five elements of student first name list and print that tuple
