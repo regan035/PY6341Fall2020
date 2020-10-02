@@ -28,12 +28,16 @@ for char in full_name:
 
   print(f"ASCII value of {full_name_a[i]} is {ord(full_name_a[i])}")
   i += 1
-
-j = 0
-for char1 in full_name_a:
-  print(char1, end='-')
 print()
+
+new_name_a='-'
+for char1 in full_name_a:
+  new_name_a=new_name_a+char1+'-'
+print(new_name_a)
+
+new_name_b='-'
 for char2 in full_name_b:
-  print(char2, end='-')
-
-
+  new_name_b=new_name_b+char2+'-'
+print(new_name_b)
+print()
+print('-------------------------------')
