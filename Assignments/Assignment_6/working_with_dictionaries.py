@@ -29,39 +29,30 @@ for student in student_names:
         students_english_marks[i] +
         students_physics_marks[i] +
         students_chemistry_marks[i])
-    #print(formatted_marks.format(students_total_marks[i]))
     i += 1
 
 #Create empty dictonary of student mark,loop through every student and add class marks in the dictionary
 
-student_marks = {}
-student_marks_list = []
 i = 0
 for student in student_names:
+  student_marks = {}
   student_marks['math'] = students_math_marks[i]
   student_marks['english'] = students_english_marks[i]
   student_marks['physics'] = students_physics_marks[i]
   student_marks['chemistry'] = students_chemistry_marks[i]
   student_marks['total_marks'] = students_total_marks[i]
-#print(student_marks)
-
-  student_info = {student: student_marks}
   student_info[student] = student_marks
-
-  print(student_info)
-
   i += 1
 
-  #Put student name and mark dictionalry in the root dictionary
-
-
-#print(student_info)
-#Print out header
-print("="*90)
+print("="*130)
 ctr = 0
 print("Name\t\t\tMath\t\t\tEnglish\t\t\tPhysics\t\t\tChemistry\t\tTotal Marks")
-print("-"*90)
+print("-"*130)
 
-for keys, values in student_info.items():
-  print(keys)
-  print(values)
+for name, mark in student_info.items():
+  print(name+'\t\t\t'
+        + formatted_marks.format(mark['math'])
+        + formatted_marks.format(mark['english'])
+        + formatted_marks.format(mark['physics'])
+        + formatted_marks.format(mark['chemistry'])
+        + formatted_marks.format(mark['total_marks']))
