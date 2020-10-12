@@ -32,7 +32,6 @@ for student in student_names:
     i += 1
 
 #Create empty dictonary of student mark,loop through every student and add class marks in the dictionary
-
 i = 0
 for student in student_names:
   student_marks = {}
@@ -44,8 +43,9 @@ for student in student_names:
   student_info[student] = student_marks
   i += 1
 
+print(student_info)
+print()
 print("="*130)
-ctr = 0
 print("Name\t\t\tMath\t\t\tEnglish\t\t\tPhysics\t\t\tChemistry\t\tTotal Marks")
 print("-"*130)
 
