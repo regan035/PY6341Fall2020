@@ -3,7 +3,7 @@
 # Sunday, October 18, 2020 at 11:59 pm
 # MSITM 6341
 
-# Assignment #6
+# Assignment #7
 # Assignment Title :Workint with input and while
 
 print('Please input the name and monthly income for each person.')
