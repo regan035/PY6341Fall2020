@@ -17,7 +17,7 @@ while active:
   name_input = input('Please type in the name: ')
   if name_input == 'quit':
       break
-      active = False
+      #active = False
   salary_input = input('Please type in the salary: ')
   salary = float(salary_input)
   name_salary[name_input.title()] = salary
