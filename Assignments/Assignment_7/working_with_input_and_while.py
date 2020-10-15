@@ -19,7 +19,6 @@ while active:
 
   salary_input = input('Please type in the salary: ')
   salary = float(salary_input)
-
   name_salary[name_input.title()] = salary
 
 print()
