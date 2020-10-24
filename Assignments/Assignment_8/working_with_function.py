@@ -36,5 +36,8 @@ print('='*80)
 print('City Name\t\t\tTemperature\t\tTemperature classification')
 print('='*80)
 for key,value in (city_temp_dict.items()):
-  print(f'{key} \t\t\t {str(value)} \t\t\t {classify_temperatur(value)}')
+  if len(key)<=6:
+    print((f'{key} \t\t\t\t {str(value)} \t\t\t {classify_temperatur(value)}'))
+  else:
+    print(f'{key} \t\t\t {str(value)} \t\t\t {classify_temperatur(value)}')
 print('='*80)
