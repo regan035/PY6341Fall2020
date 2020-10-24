@@ -5,6 +5,11 @@
 
 # Assignment #8
 # Assignment Title :Workint with functions
+
+print()
+print('Please enter the city name and temperature. Enter "done" in the name field to stop the use input. ')
+print()
+
 city_temp_dict={}
 active = True
 while active:
@@ -15,23 +20,24 @@ while active:
   int_city_temp = int(city_temp)
   city_temp_dict[city_name.title()]=int_city_temp
 
-def classify_temperatur(float_city_temp):
-  if float_city_temp>100:
+def classify_temperatur(int_city_temp):
+  if int_city_temp>100:
     temp_cla = 'Very Hot weather'
-  if float_city_temp<=100:
+  if int_city_temp<=100:
     temp_cla = 'Hot weather'
-  if float_city_temp<=90:
+  if int_city_temp<=90:
     temp_cla = 'Warm'
-  if float_city_temp<=80:
+  if int_city_temp<=80:
     temp_cla = 'Good weather'
-  if float_city_temp<=70:
+  if int_city_temp<=70:
     temp_cla = 'Cold'
-  if float_city_temp<=50:
+  if int_city_temp<=50:
     temp_cla = 'Very Cold'
-  if float_city_temp<=32:
+  if int_city_temp<=32:
     temp_cla = 'Freezing Weather'
   return(temp_cla)
 
+print()
 print('='*80)  
 print('City Name\t\t\tTemperature\t\tTemperature classification')
 print('='*80)
@@ -41,3 +47,4 @@ for key,value in (city_temp_dict.items()):
   else:
     print(f'{key} \t\t\t {str(value)} \t\t\t {classify_temperatur(value)}')
 print('='*80)
+print()
