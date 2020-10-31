@@ -4,7 +4,7 @@
 # MSITM 6341
 
 # Assignment #8
-# Assignment Title :Workint with functions
+# Assignment Title :Working with functions
 
 print()
 print('Please enter the city name and temperature. Enter "done" in the name field to stop the use input. ')
