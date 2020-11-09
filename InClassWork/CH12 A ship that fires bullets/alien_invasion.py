@@ -3,7 +3,7 @@ import pygame
 from settings import Settings
 from ship import Ship
 
-class AlianInvasion:
+class AlienInvasion:
     """Overall class to manage game assets and behavior."""
     def __init__(self):
         """Initial the game, and create game resources."""
@@ -13,7 +13,7 @@ class AlianInvasion:
         pygame.display.set_caption("Alien Invasion")
         self.ship = Ship(self)
         # Set the blackground color.
-        self.bg_color = (230, 230, 230)
+        #self.bg_color = (230, 230, 230)
 
     def run_game(self):
         """Start the main loop for the game."""
@@ -30,5 +30,5 @@ class AlianInvasion:
     
 if __name__=='__main__':
     #Make a game instance, and run the game.
-    ai = AlianInvasion()
+    ai = AlienInvasion()
     ai.run_game()
