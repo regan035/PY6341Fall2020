@@ -14,19 +14,54 @@ class AlienInvasion:
         self.ship = Ship(self)
         # Set the blackground color.
         #self.bg_color = (230, 230, 230)
+        #Ship settings
+        self.ship_speed = 1.5
 
     def run_game(self):
         """Start the main loop for the game."""
         while True:
-            #Watch fpr keyboard and mouse events.
-            for event in pygame.event.get():
-                if event.type == pygame.QUIT:
-                    sys.exit()
-            # Redraw the screen during each pass through the loop.
-            self.screen.fill(self.settings.bg_color)
-            self.ship.blitme()
-            # Make the most recently draw screen visible.
-            pygame.display.flip()
+            self._check_events()
+            self.ship.update()
+            self._update_screen()
+    
+    def _check_events(self):
+        """Respond to keypresses and mouse events"""
+        #Watch fpr keyboard and mouse events.
+        for event in pygame.event.get():
+            if event.type == pygame.QUIT:
+                 sys.exit()
+            elif event.type == pygame.KEYDOWN:
+                self._check_keydown_events(event)
+
+            elif event.type == pygame.KEYUP:
+                self._check_keyup_events(event)
+
+                    #Move the ship to right
+                    #self.ship.rect.x += 1
+
+    def _check_keydown_events(self, event):
+        """Respond to keypresses"""
+        if event.key == pygame.K_RIGHT:
+            self.ship.moving_right = True
+        elif event.key == pygame.K_LEFT:
+            self.ship.moving_left = True
+        elif event.key == pygame.K_q:
+            sys.exit()
+    
+    def _check_keyup_events(self, event):
+        """Respond to key releases"""
+        if event.key == pygame.K_RIGHT:
+            self.ship.moving_right = False
+        elif event.key == pygame.K_LEFT:
+            self.ship.moving_left = False
+
+    def _update_screen(self):
+        """Update images on the screen, and flip to the new screen."""
+        # Redraw the screen during each pass through the loop.
+        self.screen.fill(self.settings.bg_color)
+        self.ship.blitme()
+        # Make the most recently draw screen visible.
+        pygame.display.flip()
     
 if __name__=='__main__':
     #Make a game instance, and run the game.
