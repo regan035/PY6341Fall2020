@@ -10,7 +10,7 @@ class Ship:
         self.settings = ai_game.settings
 
         # Load the ship image and get its rect.
-        img_path = '/Users/genli/Desktop/PY6341Fall2020/Gen Li GitRepo/InClassWork/CH12 A ship that fires bullets/images/ship.png'
+        img_path = '/Users/genli/Desktop/PY6341Fall2020/Gen Li GitRepo/FinalProject/images/ship.png'
         self.image = pygame.image.load(img_path)
         self.rect = self.image.get_rect()
         # Start each new ship at the bottom center of the screen.
