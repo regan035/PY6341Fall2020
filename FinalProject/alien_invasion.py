@@ -134,7 +134,7 @@ class AlienInvasion:
             if alien.check_edges():
                 self._change_fleet_direction()
                 break
-
+            
     def _change_fleet_direction(self):
         """drop the entire fleet and change the fleet's direction"""
         for alien in self.aliens.sprites():
