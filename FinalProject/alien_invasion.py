@@ -37,11 +37,6 @@ class AlienInvasion:
         #make the play button
         self.play_button = Button(self,'Play')
 
-        # Set the blackground color.
-        #self.bg_color = (230, 230, 230)
-        #Ship settings
-        # self.ship_speed = 1.5
-
     def run_game(self):
         """Start the main loop for the game."""
         while True:
@@ -68,8 +63,7 @@ class AlienInvasion:
                 mouse_pos = pygame.mouse.get_pos()
                 self._check_play_button(mouse_pos)
 
-                    #Move the ship to right
-                    #self.ship.rect.x += 1
+
     def _check_play_button(self, mouse_pos):
         """start a new game when the player clicks play"""
         button_clicked = self.play_button.rect.collidepoint(mouse_pos)
