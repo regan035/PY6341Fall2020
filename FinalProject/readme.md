@@ -27,3 +27,7 @@ Step3, Run the code: To implement the project please open the alien_invation.py 
 ![](images/01.gif)
 ![](images/02.gif)
 ![](images/03.gif)
+
+## Contact
+Email: regan035@gmail.com
+Linkedin: www.linkedin.com/in/genli
