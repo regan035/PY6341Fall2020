@@ -32,4 +32,5 @@ Step3, Run the code: To implement the project please open the alien_invation.py 
 
 ## Contact
 Email: regan035@gmail.com
+
 Linkedin: www.linkedin.com/in/genli
