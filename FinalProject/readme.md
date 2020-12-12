@@ -17,7 +17,7 @@
 * We set ship life as 3 initially and this number can be adjusted on settings.py line 17.  
 
 ## Running Instruction
-Step1, Setup image paths: Before running the code please make sure to download all project files and update below image paths based on your computer disk6 locations: 
+Step1, Setup image paths: Before running the code please make sure to download all project files and update below image paths based on your computer disk locations: 
 * alien.py line13: img_alien = ‘ ’
 * settings.py line12: bg_img_path = ‘ ’
 
