@@ -19,6 +19,7 @@
 ## Running Instruction
 Step1, Setup image paths: Before running the code please make sure to download all project files and update below image paths based on your computer disk locations: 
 * alien.py line13: img_alien = ‘ ’
+* ship.py line15: img_ship = ‘ ’
 * settings.py line12: bg_img_path = ‘ ’
 
 Step2, Setup proper display mode: The game will be run in a game window by default and we have an option to run the game in full screen. In alien_Invation.py there is an option to run the game either in full screen (line 20 to 22) or window(line 25). Please comment out the option that you not prefer. 
